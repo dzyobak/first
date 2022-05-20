@@ -5,52 +5,7 @@
   padding: 0.5em;
   margin-bottom: 10px;
 }
-.title-second-page {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .img-logo {
   width: 50px;
   height: 50px;
-}
-
-.nav-link {
-  margin-right: 15px;
-}
-
-.card {
-  margin-top: 90px;
-}
-.title_index3 {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.ul_index3 {
-  align-items: center;
-  padding: 0px;
-}
-
-.checkbox {
-  margin-right: 8px;
-}
-
-.div_ul_index3 {
-  display: block;
-}
-
-ul {
-  list-style: none;
-}
-.li1 {
-  margin: 3px;
-}
-
-.col_index_3 {
-  align-items: center;
-}
-
-.btn-center {
-  text-align: center;
 }
