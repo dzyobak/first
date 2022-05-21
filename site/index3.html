@@ -26,7 +26,20 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <title>...</title>
+    <script src="assets/main.js">
+            document.body.onload = addElement;
+      var my_div = (newDiv = null);
+      var a = document.getElementById("note__input");
+
+      function addElement() {
+        var newDiv = document.createElement("div");
+        newDiv.innerHTML = "a";
+        my_div = document.getElementById("org_div1");
+        document.body.insertBefore(newDiv, my_div);
+      }
+      document.write("jellO!");
+    </script>
+    <title>Third Page</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,7 +76,28 @@
       </div>
     </nav>
     <div class="container my-2 text-center">
-      <h3></h3>
+      <h3>Your Notes</h3>
+      <div class="div__note__input">
+        <textarea
+          name="comment"
+          id="note__input"
+          cols="50"
+          rows="4"
+          form="usform"
+          placeholder="   Write your note"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        id="btn__submit"
+        class="btn btn-secondary"
+        onclick="addElement()"
+      >
+        Submit
+      </button>
+      <div class="container">
+        <div id="container div"></div>
+      </div>
     </div>
   </body>
 </html>
