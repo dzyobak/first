@@ -27,17 +27,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/main.js">
-            document.body.onload = addElement;
-      var my_div = (newDiv = null);
-      var a = document.getElementById("note__input");
-
-      function addElement() {
-        var newDiv = document.createElement("div");
-        newDiv.innerHTML = "a";
-        my_div = document.getElementById("org_div1");
-        document.body.insertBefore(newDiv, my_div);
+      var a = document.getElementsByClassName("note__input");
+      function get() {
+        document.getElementById("div__").innerHTML += "Your first note: " + a;
       }
-      document.write("jellO!");
     </script>
     <title>Third Page</title>
   </head>
@@ -80,6 +73,7 @@
       <div class="div__note__input">
         <textarea
           name="comment"
+          class="note__input"
           id="note__input"
           cols="50"
           rows="4"
@@ -87,17 +81,17 @@
           placeholder="   Write your note"
         ></textarea>
       </div>
-      <button
-        type="submit"
+      <input
+        type="button"
         id="btn__submit"
         class="btn btn-secondary"
-        onclick="addElement()"
+        onclick="get()"
+        value="Submit"
       >
-        Submit
-      </button>
-      <div class="container">
-        <div id="container div"></div>
-      </div>
+      </input>
+    </div>
+    <div class="container">
+      <div id="div__"></div>
     </div>
   </body>
 </html>
