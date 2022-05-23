@@ -1,5 +1,5 @@
-var a = document.getElementsByClassName("note__input").value;
-
-function get() {
-  document.getElementById("div__").innerHTML += "Your first note: " + a;
+var note = document.getElementsByClassName("note__input").value;
+function get(value) {
+  document.getElementById("div__").innerHTML += "Your first note: " + note;
 }
+document.getElementById(div__).innerHTML = "privet";
