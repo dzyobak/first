@@ -76,21 +76,28 @@
           placeholder="   Write your note"
         ></textarea>
       </div>
-      <input
-        type="button"
+      <button
+        type="submit"
         id="btn__submit"
         class="btn btn-secondary"
         onclick="get()"
         value="Submit"
       >
-      </input>
+        Note
+      </button>
+      <script>
+        document.querySelector("#btn__submit").onclick = function get() {
+          const log = document.querySelector("#note__input").value;
+          document.querySelector("#div__").innerHTML = "Your notes: " + log;
+        };
+      </script>
     </div>
-    <hr>
+    <hr />
     <div class="container text-center">
       <h3>Your notes:</h3>
     </div>
-      <div class="container">
-        <div id="div__"></div>
-      </div>
+    <div class="container">
+      <div id="div__"></div>
+    </div>
   </body>
 </html>
